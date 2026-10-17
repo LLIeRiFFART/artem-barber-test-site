@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VANTA Barber Studio — Your best look starts here | Brooklyn, NY</title>
+  <meta name="description" content="VANTA is a premium barber studio in Brooklyn. Signature haircuts, skin fades, beard sculpting and hot towel shaves. Book your chair online.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Tailwind (utility helper) + project styles -->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader">
+    <div>
+      <div class="preloader__logo"><span>V</span><span>A</span><span>N</span><span>T</span><span>A</span></div>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor"></div>
+  <div class="cursor-ring"><span>View</span></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="VANTA home">
+        <svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+          <rect width="48" height="48" rx="14" fill="#d41f3a"/>
+          <path d="M12 13l12 22 12-22" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="24" cy="38" r="2.6" fill="#fff"/>
+        </svg>
+        <span>VANTA<small>Barber Studio</small></span>
+      </a>
+
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#about" class="nav__link">About</a>
+        <a href="#services" class="nav__link">Services</a>
+        <a href="#team" class="nav__link">Barbers</a>
+        <a href="#booking" class="nav__link">Booking</a>
+        <a href="blog.html" class="nav__link">Journal</a>
+        <a href="contacts.html" class="nav__link">Contacts</a>
+      </nav>
+
+      <div class="header__right">
+        <a href="tel:+17185550142" class="header__phone">+1 (718) 555-0142</a>
+        <a href="#booking" class="btn btn--primary btn--sm" data-magnetic="0.25">Book a chair</a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile navigation -->
+  <div class="mobile-nav">
+    <a href="#about" class="mobile-nav__link">About</a>
+    <a href="#services" class="mobile-nav__link">Services</a>
+    <a href="#team" class="mobile-nav__link">Barbers</a>
+    <a href="#booking" class="mobile-nav__link">Booking</a>
+    <a href="blog.html" class="mobile-nav__link">Journal</a>
+    <a href="contacts.html" class="mobile-nav__link">Contacts</a>
+    <a href="#booking" class="btn btn--primary mobile-nav__cta">Book a chair</a>
+    <div class="mobile-nav__footer">
+      <a href="tel:+17185550142">+1 (718) 555-0142</a>
+      <span>142 Bedford Ave, Brooklyn</span>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" id="home">
+      <div class="hero__glow"></div>
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <span class="overline">Brooklyn · Est. 2016</span>
+          <h1 class="h-display hero__title" data-accent-from="3">Your best look starts here</h1>
+          <p class="lead hero__lead">A studio built around one idea: you should leave the chair looking like the best version of yourself — not like everyone else. Precision fades, sculpted beards, hot towel rituals.</p>
+          <div class="hero__actions">
+            <a href="#booking" class="btn btn--primary" data-magnetic="0.3">
+              Book a chair
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </a>
+            <a href="#services" class="btn btn--ghost" data-magnetic="0.3">Explore services</a>
+          </div>
+          <div class="hero__stats">
+            <div class="stat">
+              <div class="stat__num"><span data-count="10">0</span><i>+</i></div>
+              <div class="stat__label">Years in Brooklyn</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num"><span data-count="12">0</span></div>
+              <div class="stat__label">Barbers on the floor</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num"><span data-count="48">0</span><b>k</b><i>+</i></div>
+              <div class="stat__label">Cuts delivered</div>
+            </div>
+            <div class="stat">
+              <div class="stat__num"><span data-count="4.9" data-decimals="1">0.0</span><i>★</i></div>
+              <div class="stat__label">1,240 Google reviews</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual">
+          <div class="hero__card">
+            <img src="https://images.pexels.com/photos/13661725/pexels-photo-13661725.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=1200&w=800" alt="Profile portrait of a man with a sharp beard line-up">
+          </div>
+          <div class="hero__badge hero__badge--slot">
+            <span class="pulse"></span>
+            <div><b>Next free slot</b><small>Today · 14:30 with Leo</small></div>
+          </div>
+          <div class="hero__badge hero__badge--rating">
+            <div><span class="stars">★★★★★</span><b>“Best fade in BK”</b><small>— Jordan M., regular since 2019</small></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MARQUEE ========== -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__item"><span>Skin fades</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Beard sculpting</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Hot towel shave</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Scissor work</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Gray blending</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Kids cuts</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg></div>
+        <div class="marquee__item"><span>Skin fades</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Beard sculpting</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Hot towel shave</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Scissor work</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Gray blending</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg><span>Kids cuts</span><svg viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="4"/></svg></div>
+      </div>
+    </div>
+
+    <!-- ========== ABOUT ========== -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about__media reveal reveal--left">
+          <div class="media-card">
+            <span class="media-card__tag"><i></i>Live from the studio</span>
+            <video data-autoplay muted loop playsinline preload="metadata"
+              poster="https://images.pexels.com/photos/7686554/pexels-photo-7686554.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
+              <source src="https://videos.pexels.com/video-files/7686554/7686554-hd_1920_1080_24fps.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+
+        <div class="about__text">
+          <span class="overline reveal">The studio</span>
+          <h2 class="h-xl reveal" style="--d:.1s">Not just shop, <span class="accent">it's studio</span></h2>
+          <p class="lead reveal" style="--d:.2s">VANTA started in 2016 as two chairs in the back of a Bedford Ave record shop. Today it's a 12-barber studio, but the rule stayed the same: one client at a time, no double-booking, no rushing the line-up.</p>
+          <div class="feature-list reveal-stagger">
+            <div class="feature">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"/></svg></div>
+              <div><b>Every service gets the time it needs</b><p>From a 10-minute add-on to a 90-minute combo, the calendar blocks the full service duration.</p></div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4L12 16.8l-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg></div>
+              <div><b>Consultation before every service</b><p>Head shape, hair growth, your lifestyle. Then we cut. Not the other way around.</p></div>
+            </div>
+            <div class="feature">
+              <div class="feature__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12v8H4v-8M2 7h20v5H2zM12 22V7M12 7H7.5a2.5 2.5 0 010-5C11 2 12 7 12 7zM12 7h4.5a2.5 2.5 0 000-5C13 2 12 7 12 7z"/></svg></div>
+              <div><b>Free re-touch within 7 days</b><p>If something grows out odd or you want the edges tighter, come back. On the house.</p></div>
+            </div>
+          </div>
+          <div style="margin-top:32px" class="reveal">
+            <a href="about.html" class="link-arrow">Our story <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES ========== -->
+    <section class="section section--surface services" id="services">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Services &amp; pricing</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Pick the plan that fits your style</h2>
+          </div>
+          <a href="services.html" class="link-arrow reveal" style="--d:.2s">Full price list <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+
+        <div class="service-list reveal-stagger">
+          <a href="#booking" class="service" data-img="haircut">
+            <span class="service__num">01</span>
+            <span class="service__name">Signature Haircut</span>
+            <span class="service__desc">Consultation, scissor &amp; clipper work, hot towel finish, styling with premium product.</span>
+            <span class="service__time">From</span>
+            <span class="service__price">$55</span>
+          </a>
+          <a href="#booking" class="service" data-img="fade">
+            <span class="service__num">02</span>
+            <span class="service__name">Skin Fade</span>
+            <span class="service__desc">Zero-to-length blend with straight razor edging. Our most requested service.</span>
+            <span class="service__time">From</span>
+            <span class="service__price">$65</span>
+          </a>
+          <a href="#booking" class="service" data-img="beard">
+            <span class="service__num">03</span>
+            <span class="service__name">Beard Sculpting</span>
+            <span class="service__desc">Shape, line-up, hot towel, beard oil. Designed around your jawline, not a template.</span>
+            <span class="service__time">From</span>
+            <span class="service__price">$35</span>
+          </a>
+          <a href="#booking" class="service" data-img="shave">
+            <span class="service__num">04</span>
+            <span class="service__name">Hot Towel Shave</span>
+            <span class="service__desc">Traditional straight razor shave. Two passes, pre-shave oil, three hot towels, cold finish.</span>
+            <span class="service__time">From</span>
+            <span class="service__price">$50</span>
+          </a>
+          <a href="#booking" class="service" data-img="kids">
+            <span class="service__num">05</span>
+            <span class="service__name">Kids Cut</span>
+            <span class="service__desc">Under 12. Patient barbers, no scary clippers, a lollipop at the end. Parents welcome.</span>
+            <span class="service__time">From</span>
+            <span class="service__price">$35</span>
+          </a>
+          <a href="#booking" class="service" data-img="gray">
+            <span class="service__num">06</span>
+            <span class="service__name">Gray Blending</span>
+            <span class="service__desc">Subtle, ammonia-free camouflage that fades out naturally over 4–6 weeks. Nobody will know.</span>
+            <span class="service__time">From</span>
+            <span class="service__price">$40</span>
+          </a>
+          <a href="#booking" class="service" data-img="scissors">
+            <span class="service__num">07</span>
+            <span class="service__name">Scissor Cut</span>
+            <span class="service__desc">Clipper-free shape for longer styles, textured crops and curls, finished in the hair's natural fall.</span>
+            <span class="service__time">From</span>
+            <span class="service__price">$60</span>
+          </a>
+        </div>
+
+        <!-- Floating preview that follows the cursor over the list -->
+        <div class="service__preview" aria-hidden="true">
+          <img data-key="haircut" src="https://images.pexels.com/photos/7447152/pexels-photo-7447152.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+          <img data-key="fade" src="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+          <img data-key="beard" src="https://images.pexels.com/photos/9992819/pexels-photo-9992819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+          <img data-key="shave" src="https://images.pexels.com/photos/1453005/pexels-photo-1453005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+          <img data-key="kids" src="https://images.pexels.com/photos/31840006/pexels-photo-31840006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+          <img data-key="gray" src="https://images.pexels.com/photos/37533244/pexels-photo-37533244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+          <img data-key="scissors" src="https://images.pexels.com/photos/19664892/pexels-photo-19664892.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="">
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BEFORE / AFTER ========== -->
+    <section class="section" id="results">
+      <div class="container compare-section">
+        <div>
+          <span class="overline reveal">The result</span>
+          <h2 class="h-xl reveal" style="--d:.1s">Spot the difference</h2>
+          <p class="lead reveal" style="--d:.2s">A Signature Haircut + Beard Sculpting combo takes 75 minutes.</p>
+          <div class="steps reveal-stagger">
+            <div class="step"><span class="step__n">01</span><div><b>Consult</b><p>5 minutes on what you want, what grows how, and what fits your face.</p></div></div>
+            <div class="step"><span class="step__n">02</span><div><b>Cut &amp; shape</b><p>Clipper foundation, scissor detail, razor edges. No shortcuts.</p></div></div>
+            <div class="step"><span class="step__n">03</span><div><b>Finish</b><p>Hot towel, product that suits your hair, and a photo for the archive if you want one.</p></div></div>
+          </div>
+        </div>
+
+        <div class="compare reveal reveal--scale" data-cursor="view">
+          <img class="compare__before" src="img/before.jpg" alt="Before the haircut">
+          <img class="compare__after" src="img/after.jpg" alt="After the haircut">
+          <span class="compare__label compare__label--before">Before</span>
+          <span class="compare__label compare__label--after">After</span>
+          <div class="compare__handle"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== TEAM ========== -->
+    <section class="section section--surface" id="team">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">The barbers</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Choose your barber</h2>
+          </div>
+          <p class="lead section-head__aside section-head__aside--narrow reveal" style="--d:.2s">Three levels — Barber, Senior, Master. Same standards, different years behind the chair. Hover to meet them.</p>
+        </div>
+
+        <div class="team-grid reveal-stagger">
+          <div class="barber" data-tilt="8">
+            <img src="img/barber-1.jpg" alt="Marcus Hale, Master Barber">
+            <div class="barber__info">
+              <span class="barber__level">Master</span>
+              <h3 class="barber__name">Marcus Hale</h3>
+              <p class="barber__spec">Founder · Skin fades &amp; classic scissor work</p>
+              <p class="barber__more">14 years behind the chair. Trained in London and Philadelphia. If you want a cut that still looks intentional in week four — this is the guy.</p>
+            </div>
+          </div>
+          <div class="barber" data-tilt="8">
+            <img src="img/barber-2.jpg" alt="Leo Ferrante, Senior Barber">
+            <div class="barber__info">
+              <span class="barber__level">Senior</span>
+              <h3 class="barber__name">Leo Ferrante</h3>
+              <p class="barber__spec">Beard architecture &amp; hot towel shaves</p>
+              <p class="barber__more">Straight razor specialist. Leo does the longest beard consultations in the studio and it shows — his clients come back on a 3-week cycle.</p>
+            </div>
+          </div>
+          <div class="barber" data-tilt="8">
+            <img src="img/barber-3.jpg" alt="Dante Cole, Senior Barber">
+            <div class="barber__info">
+              <span class="barber__level">Senior</span>
+              <h3 class="barber__name">Dante Cole</h3>
+              <p class="barber__spec">Textured crops, curls &amp; gray blending</p>
+              <p class="barber__more">Dante is our go-to for curly and coily textures. Also the only barber who can convince you that gray blending is a good idea — and be right.</p>
+            </div>
+          </div>
+          <div class="barber" data-tilt="8">
+            <img src="img/barber-4.jpg" alt="Ivan Petrov, Barber">
+            <div class="barber__info">
+              <span class="barber__level">Barber</span>
+              <h3 class="barber__name">Ivan Petrov</h3>
+              <p class="barber__spec">Modern fades &amp; kids cuts</p>
+              <p class="barber__more">Three years in, fastest-growing client list in the studio. Incredibly patient with kids, incredibly precise with a trimmer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== PRICE CALCULATOR ========== -->
+    <section class="section" id="calculator">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Price calculator</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Find your perfect visit</h2>
+          </div>
+          <p class="lead section-head__aside reveal" style="--d:.2s">Pick services and a barber level — the price and time update instantly. Cut + beard combos get 10% off automatically.</p>
+        </div>
+
+        <div class="calc reveal reveal--scale">
+          <div class="calc__panel">
+            <div class="calc__group">
+              <div class="calc__label"><span>Services</span><span><b data-calc-count>0</b> selected</span></div>
+              <div class="chip-grid">
+                <label class="chip"><input type="checkbox" name="service" value="haircut" checked><span class="chip__box"><span>Signature Cut<small>45 min</small></span><span class="chip__price" data-base="55">$55</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="fade"><span class="chip__box"><span>Skin Fade<small>60 min</small></span><span class="chip__price" data-base="65">$65</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="scissors"><span class="chip__box"><span>Scissor Cut<small>50 min</small></span><span class="chip__price" data-base="60">$60</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="beard"><span class="chip__box"><span>Beard Sculpting<small>30 min</small></span><span class="chip__price" data-base="35">$35</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="shave"><span class="chip__box"><span>Hot Towel Shave<small>45 min</small></span><span class="chip__price" data-base="50">$50</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="head"><span class="chip__box"><span>Head Shave<small>35 min</small></span><span class="chip__price" data-base="45">$45</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="gray"><span class="chip__box"><span>Gray Blending<small>30 min</small></span><span class="chip__price" data-base="40">$40</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="kids"><span class="chip__box"><span>Kids Cut<small>30 min</small></span><span class="chip__price" data-base="35">$35</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="facial"><span class="chip__box"><span>Express Facial<small>25 min</small></span><span class="chip__price" data-base="40">$40</span></span></label>
+                <label class="chip"><input type="checkbox" name="service" value="wax"><span class="chip__box"><span>Nose / Ear Wax<small>10 min</small></span><span class="chip__price" data-base="15">$15</span></span></label>
+              </div>
+            </div>
+            <div class="calc__group">
+              <div class="calc__label"><span>Barber level</span></div>
+              <div class="seg">
+                <label><input type="radio" name="level" value="barber" checked><span>Barber</span></label>
+                <label><input type="radio" name="level" value="senior"><span>Senior · +25%</span></label>
+                <label><input type="radio" name="level" value="master"><span>Master · +60%</span></label>
+              </div>
+            </div>
+          </div>
+
+          <div class="calc__summary">
+            <span class="overline">Your estimate</span>
+            <div class="calc__total" data-calc-total><sup>$</sup>0</div>
+            <div class="calc__meta"><span>⏱ <b data-calc-time>—</b></span><span>Walk-ins +$10</span></div>
+            <ul class="calc__lines" data-calc-lines></ul>
+            <button class="btn calc__book" data-calc-book>
+              Book with this set
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </button>
+            <p class="calc__note">Final price confirmed at consultation. First-visit offers are applied separately; discounts do not stack.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BOOKING ========== -->
+    <section class="section section--surface" id="booking">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Online booking</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Book your spot in seconds</h2>
+          </div>
+          <p class="lead section-head__aside reveal" style="--d:.2s">Choose a barber, service and available time. Green means plenty of slots, amber means only a few remain, and red means the day is fully booked.</p>
+        </div>
+
+        <div class="booking reveal reveal--scale">
+          <!-- Calendar -->
+          <div class="booking__panel">
+            <div class="barber-picker"
+              data-img1="img/barber-1.jpg"
+              data-img2="img/barber-2.jpg"
+              data-img3="img/barber-3.jpg"
+              data-img4="img/barber-4.jpg"></div>
+            <div class="booking__panel-title">
+              <b data-cal-month>Month</b>
+              <div class="cal__nav">
+                <button class="cal__btn" data-cal-prev aria-label="Previous month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+                <button class="cal__btn" data-cal-next aria-label="Next month"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg></button>
+              </div>
+            </div>
+            <div class="cal__weekdays"><span>Mo</span><span>Tu</span><span>We</span><span>Th</span><span>Fr</span><span>Sa</span><span>Su</span></div>
+            <div class="cal__days"></div>
+            <div class="cal__legend"><span><i></i>Available</span><span><i class="lim"></i>Few slots</span><span><i class="full"></i>Fully booked</span></div>
+          </div>
+
+          <!-- Time slots -->
+          <div class="booking__panel">
+            <div class="booking__panel-title"><b>Time</b><span class="text-muted" style="font-size:13px" data-slots-date></span></div>
+            <div class="slots"></div>
+            <div class="calc__group" style="margin-top:22px">
+              <div class="calc__label"><span>Service</span></div>
+              <div class="field"><select id="booking-service"></select></div>
+            </div>
+          </div>
+
+          <!-- Summary -->
+          <div class="booking__panel booking__summary">
+            <div class="booking__panel-title"><b>Your appointment</b></div>
+            <dl>
+              <div><dt>Barber</dt><dd data-sum-barber>—</dd></div>
+              <div><dt>Date</dt><dd data-sum-date class="is-empty">Choose a date</dd></div>
+              <div><dt>Time</dt><dd data-sum-time class="is-empty">Choose a time</dd></div>
+              <div><dt>Service</dt><dd data-sum-service>—</dd><dd class="text-muted" style="font-size:13px;font-family:var(--font-body);font-weight:500" data-sum-price></dd></div>
+            </dl>
+            <button class="btn btn--primary" data-book-confirm disabled>
+              Request appointment
+              <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg>
+            </button>
+            <p class="booking__hint">No prepayment required. Cancel free up to 3 hours before the visit. Running late? Text us and we will hold the chair for 10 minutes.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALLERY ========== -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">The archive</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Get inspired before you sit</h2>
+          </div>
+          <a href="https://instagram.com" target="_blank" rel="noopener" class="link-arrow reveal" style="--d:.2s">See our work on Instagram <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a>
+        </div>
+
+        <div class="gallery reveal-stagger">
+          <a href="#gallery" class="gallery__item gallery__item--w gallery__item--h" data-cursor="view"><img src="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Barber giving a precise haircut"><span class="gallery__cap">Mid-skin fade<small>Service duration · 60 min</small></span></a>
+          <a href="#gallery" class="gallery__item" data-cursor="view"><img src="https://images.pexels.com/photos/7697217/pexels-photo-7697217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Clippers close-up"><span class="gallery__cap">Tools of the trade<small>Studio</small></span></a>
+          <a href="#gallery" class="gallery__item" data-cursor="view"><img src="https://images.pexels.com/photos/9992819/pexels-photo-9992819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Beard styling"><span class="gallery__cap">Beard sculpt<small>Leo · 30 min</small></span></a>
+          <a href="#gallery" class="gallery__item gallery__item--w" data-cursor="view"><img src="https://images.pexels.com/photos/13138476/pexels-photo-13138476.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Barbershop interior with leather chairs"><span class="gallery__cap">The floor<small>142 Bedford Ave</small></span></a>
+          <a href="#gallery" class="gallery__item" data-cursor="view"><img src="https://images.pexels.com/photos/5970247/pexels-photo-5970247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Head shave"><span class="gallery__cap">Head shave<small>Dante · 35 min</small></span></a>
+          <a href="#gallery" class="gallery__item" data-cursor="view"><img src="https://images.pexels.com/photos/19664892/pexels-photo-19664892.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Barber at work"><span class="gallery__cap">Textured crop<small>Ivan · 45 min</small></span></a>
+          <a href="#gallery" class="gallery__item gallery__item--w" data-cursor="view"><img src="https://images.pexels.com/photos/1453005/pexels-photo-1453005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Razor detail work"><span class="gallery__cap">Razor line-up<small>Leo · detail</small></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REVIEWS ========== -->
+    <section class="section section--surface" id="reviews">
+      <div class="container reviews">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Reviews</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Don't take our word for it</h2>
+          </div>
+          <div class="reveal" style="--d:.2s"><span class="stars" style="font-size:18px">★★★★★</span> <b>4.9</b> <span class="text-muted">· 1,240 Google reviews</span></div>
+        </div>
+
+        <div class="reviews__viewport">
+          <div class="reviews__track">
+            <article class="review">
+              <svg class="review__quote" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+              <p>Been coming to Marcus since 2019. Moved to Jersey City and still take the train in every three weeks. That should tell you everything.</p>
+              <div class="review__author"><img src="https://images.pexels.com/photos/7562139/pexels-photo-7562139.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=300&w=300" alt=""><div><b>Jordan Mitchell</b><small>Regular since 2019</small></div></div>
+            </article>
+            <article class="review">
+              <svg class="review__quote" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+              <p>First hot towel shave of my life with Leo. I actually fell asleep. Woke up looking like a different, better person. Booked the next one before leaving.</p>
+              <div class="review__author"><img src="https://images.pexels.com/photos/14950779/pexels-photo-14950779.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=300&w=300" alt=""><div><b>Ethan Brooks</b><small>Hot Towel Shave</small></div></div>
+            </article>
+            <article class="review">
+              <svg class="review__quote" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+              <p>Finally a place that understands curls. Dante didn't just cut it — he explained how to style it so it looks like this on a Tuesday too. Worth every dollar.</p>
+              <div class="review__author"><img src="https://images.pexels.com/photos/9271168/pexels-photo-9271168.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=300&w=300" alt=""><div><b>Malik Johnson</b><small>Textured crop</small></div></div>
+            </article>
+            <article class="review">
+              <svg class="review__quote" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+              <p>Took my 7-year-old to Ivan. Zero tears, which is a first. The clear online calendar made choosing a time simple — no phone tag.</p>
+              <div class="review__author"><img src="https://images.pexels.com/photos/30701542/pexels-photo-30701542.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=300&w=300" alt=""><div><b>Robert Klein</b><small>Kids Cut</small></div></div>
+            </article>
+            <article class="review">
+              <svg class="review__quote" viewBox="0 0 24 24" fill="currentColor"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+              <p>The gray blending is witchcraft. My wife asked if I'd been sleeping better. The studio itself feels like a members' club without the attitude.</p>
+              <div class="review__author"><img src="https://images.pexels.com/photos/33815738/pexels-photo-33815738.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=300&w=300" alt=""><div><b>Daniel Reyes</b><small>Gray Blending + Cut</small></div></div>
+            </article>
+          </div>
+        </div>
+        <div class="reviews__controls">
+          <div class="reviews__dots"></div>
+          <div class="reviews__arrows">
+            <button class="arrow-btn" data-rev-prev aria-label="Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg></button>
+            <button class="arrow-btn" data-rev-next aria-label="Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BLOG PREVIEW ========== -->
+    <section class="section" id="journal">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Journal</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Insider advice from our barbers</h2>
+          </div>
+          <a href="blog.html" class="link-arrow reveal" style="--d:.2s">All articles <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        </div>
+        <div class="blog-grid reveal-stagger">
+          <a href="article.html" class="post">
+            <div class="post__img"><img src="https://images.pexels.com/photos/37533244/pexels-photo-37533244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Guide</span></div>
+            <div class="post__body"><div class="post__meta"><span>Oct 18, 2026</span><span>6 min read</span></div><h3 class="post__title">How often should you actually get a fade?</h3><p class="post__excerpt">The honest answer depends on your hair density and how sharp you need to look on a Monday. Here's the math.</p></div>
+          </a>
+          <a href="article.html#product-guide" class="post">
+            <div class="post__img"><img src="https://images.pexels.com/photos/13058740/pexels-photo-13058740.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt=""><span class="post__tag">Products</span></div>
+            <div class="post__body"><div class="post__meta"><span>Sep 28, 2026</span><span>4 min read</span></div><h3 class="post__title">Clay, pomade, paste: what you're buying wrong</h3><p class="post__excerpt">Most men use the wrong product for their hair type. A quick field guide from our back bar.</p></div>
+          </a>
+          <a href="article.html#straight-razor" class="post">
+            <div class="post__img"><img src="https://images.pexels.com/photos/1453005/pexels-photo-1453005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Craft</span></div>
+            <div class="post__body"><div class="post__meta"><span>Sep 14, 2026</span><span>7 min read</span></div><h3 class="post__title">Why we still use a straight razor in 2026</h3><p class="post__excerpt">It's slower, it's harder to learn, and it's the only thing that gives a line-up that lasts. Leo explains.</p></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section section--surface" id="faq">
+      <div class="container faq-wrap">
+        <div class="sticky">
+          <span class="overline reveal">FAQ</span>
+          <h2 class="h-xl reveal" style="--d:.1s">Everything you need to know</h2>
+          <div class="faq-cta reveal" style="--d:.2s">
+            <b>Still have a question?</b>
+            <p class="text-muted">Text or call — a human answers during studio hours, Monday through Saturday.</p>
+            <a href="tel:+17185550142" class="h-md">+1 (718) 555-0142</a>
+            <button class="btn btn--ghost btn--sm" data-open-modal data-modal-title="Ask us anything" data-modal-sub="Leave your number — we'll call you back within 15 minutes.">Request a call</button>
+          </div>
+        </div>
+        <div class="faq reveal-stagger">
+          <div class="faq__item"><button class="faq__q">Do you take walk-ins?<span class="faq__icon"></span></button><div class="faq__a"><p>Yes, when a chair is free — but 80% of our slots are booked in advance, so online booking is the safe bet. Walk-ins carry a $10 surcharge because they break the schedule for everyone else.</p></div></div>
+          <div class="faq__item"><button class="faq__q">What's the difference between Barber, Senior and Master?<span class="faq__icon"></span></button><div class="faq__a"><p>Years behind the chair and complexity they handle. Barbers have 2–4 years, Seniors 5–9, Masters 10+. All of them pass the same VANTA technical exam. The price difference is 25% and 60% respectively.</p></div></div>
+          <div class="faq__item"><button class="faq__q">How do I pay?<span class="faq__icon"></span></button><div class="faq__a"><p>Card, Apple Pay, Google Pay or cash at the studio. No prepayment for online bookings. Tips are optional and go 100% to your barber.</p></div></div>
+          <div class="faq__item"><button class="faq__q">What if I'm running late?<span class="faq__icon"></span></button><div class="faq__a"><p>Text us. We hold the chair for 10 minutes. After that we may need to shorten the service or move you to the next free slot so the next client isn't penalised.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Can I book the same barber every time?<span class="faq__icon"></span></button><div class="faq__a"><p>Absolutely — that's the point. Pick your barber in the booking widget and the calendar shows only their availability. We keep notes on every cut so your barber remembers exactly what you had last time.</p></div></div>
+          <div class="faq__item"><button class="faq__q">Do you sell the products you use?<span class="faq__icon"></span></button><div class="faq__a"><p>Yes. Our back bar carries Reuzel, Layrite, Proraso and our own VANTA matte clay. Your barber will tell you what suits your hair — never a hard sell.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACTS ========== -->
+    <section class="section" id="contacts">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Find us</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">142 Bedford Ave, Brooklyn</h2>
+          </div>
+        </div>
+        <div class="contacts">
+          <div class="contact-card reveal reveal--left">
+            <div class="contact-row">
+              <div class="contact-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-7.1 7-12a7 7 0 10-14 0c0 4.9 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></div>
+              <div><small>Address</small><b>142 Bedford Ave, Williamsburg, Brooklyn, NY 11249</b><p class="text-muted" style="font-size:13px">L train to Bedford Ave · 2 min walk</p></div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3.1 19.5 19.5 0 01-6-6A19.8 19.8 0 012.1 4.2 2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 1.9.7 2.8a2 2 0 01-.5 2.1L8 9.9a16 16 0 006 6l1.3-1.3a2 2 0 012.1-.4c.9.3 1.8.6 2.8.7a2 2 0 011.8 2z"/></svg></div>
+              <div><small>Phone</small><b><a href="tel:+17185550142">+1 (718) 555-0142</a></b><p class="text-muted" style="font-size:13px">Calls &amp; texts · 10:00–20:00</p></div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-row__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+              <div style="flex:1"><small>Hours</small>
+                <ul class="hours">
+                  <li data-day="1"><span>Monday</span><b>10:00 – 20:00</b></li>
+                  <li data-day="2"><span>Tuesday</span><b>10:00 – 20:00</b></li>
+                  <li data-day="3"><span>Wednesday</span><b>10:00 – 20:00</b></li>
+                  <li data-day="4"><span>Thursday</span><b>10:00 – 21:00</b></li>
+                  <li data-day="5"><span>Friday</span><b>10:00 – 21:00</b></li>
+                  <li data-day="6"><span>Saturday</span><b>09:00 – 20:00</b></li>
+                  <li data-day="0"><span>Sunday</span><b>Closed</b></li>
+                </ul>
+              </div>
+            </div>
+            <div class="socials">
+              <a href="https://instagram.com" target="_blank" rel="noopener" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+              <a href="https://t.me" target="_blank" rel="noopener" class="social" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6L18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.2 13.1 2.7 11.7c-1-.3-1-1 .2-1.5L20.6 3.3c.8-.3 1.5.2 1.3 1.3z"/></svg></a>
+              <a href="https://wa.me/17185550142" target="_blank" rel="noopener" class="social" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+            </div>
+          </div>
+          <div class="map reveal reveal--right">
+            <iframe title="VANTA Barber Studio on the map" src="https://www.google.com/maps?q=142+Bedford+Ave,+Brooklyn,+NY+11249&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map__pin">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="#d41f3a"><path d="M12 22s7-7.1 7-12a7 7 0 10-14 0c0 4.9 7 12 7 12z"/></svg>
+              <div><b>VANTA Barber Studio</b><span class="text-muted" data-open-today>142 Bedford Ave · See today's hours</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA ========== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="cta-band reveal reveal--scale">
+          <div>
+            <span class="overline">First visit</span>
+            <h2 class="h-lg" style="margin-top:14px">New here? Your first cut is <span class="accent">15% off.</span></h2>
+            <p class="lead" style="margin-top:12px">Mention “FIRST15” at the desk. The first-visit offer does not stack with the Cut + Beard combo discount; the larger discount is applied.</p>
+          </div>
+          <div class="cta-band__actions">
+            <a href="#booking" class="btn btn--primary" data-magnetic="0.3">Book now</a>
+            <button class="btn btn--light" data-open-modal data-modal-title="Claim your 15% off" data-modal-sub="Leave your number — we'll call you back, apply the discount and find you a slot." data-magnetic="0.3">Call me back</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__about">
+          <a href="index.html" class="logo">
+            <svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#d41f3a"/><path d="M12 13l12 22 12-22" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="38" r="2.6" fill="#fff"/></svg>
+            <span>VANTA<small>Barber Studio</small></span>
+          </a>
+          <p>A Brooklyn barber studio for men who notice the details. Est. 2016.</p>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://t.me" target="_blank" rel="noopener" class="social" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6L18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.2 13.1 2.7 11.7c-1-.3-1-1 .2-1.5L20.6 3.3c.8-.3 1.5.2 1.3 1.3z"/></svg></a>
+            <a href="https://wa.me/17185550142" target="_blank" rel="noopener" class="social" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col">
+          <h4>Studio</h4>
+          <ul>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="services.html">Services &amp; prices</a></li>
+            <li><a href="index.html#team">Barbers</a></li>
+            <li><a href="blog.html">Journal</a></li>
+            <li><a href="contacts.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services.html">Signature Haircut</a></li>
+            <li><a href="services.html">Skin Fade</a></li>
+            <li><a href="services.html">Beard Sculpting</a></li>
+            <li><a href="services.html">Hot Towel Shave</a></li>
+            <li><a href="services.html">Gray Blending</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Visit</h4>
+          <ul>
+            <li><a href="contacts.html">142 Bedford Ave, Brooklyn, NY 11249</a></li>
+            <li><a href="tel:+17185550142">+1 (718) 555-0142</a></li>
+            <li><a href="mailto:hello@vanta.studio">hello@vanta.studio</a></li>
+            <li><span class="text-muted">Mon–Wed 10:00–20:00 · Thu–Fri 10:00–21:00 · Sat 09:00–20:00 · Sun closed</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <span>© 2016–2026 VANTA Barber Studio. All rights reserved.</span>
+        <a href="#" class="creator-link" onclick="return false;">Created by Artem Punin</a>
+      </div>
+      <div class="footer__big" aria-hidden="true">VANTA</div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V4m0 0l-6 6m6-6l6 6"/></svg></button>
+
+  <!-- ========== MODAL: callback ========== -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close-modal aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <span class="overline">VANTA · Brooklyn</span>
+      <h3 class="modal__title" id="modal-title">Request a call back</h3>
+      <p class="modal__sub">Leave your number and we will call you back during studio hours.</p>
+      <div class="modal__context"></div>
+
+      <form class="form js-lead-form" novalidate>
+        <div class="form__row">
+          <div class="field"><input type="text" name="name" placeholder="Your name" autocomplete="name"></div>
+          <div class="field"><input type="tel" name="phone" placeholder="+1 718 000 0000" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><textarea name="message" rows="2" placeholder="Anything we should know? (optional)"></textarea></div>
+        <button type="submit" class="btn btn--primary">Call me back</button>
+        <p class="form__legal">By sending, you agree to be contacted about your appointment.</p>
+      </form>
+
+      <div class="modal__or">or reach us directly</div>
+      <div class="modal__socials">
+        <a href="https://t.me" target="_blank" rel="noopener" class="modal__social modal__social--tg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6L18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.2 13.1 2.7 11.7c-1-.3-1-1 .2-1.5L20.6 3.3c.8-.3 1.5.2 1.3 1.3z"/></svg>Telegram</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="modal__social modal__social--ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+        <a href="https://wa.me/17185550142" target="_blank" rel="noopener" class="modal__social modal__social--wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+      </div>
+
+      <div class="modal__success">
+        <div class="modal__success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <h3 class="h-md">Request received.</h3>
+        <p class="text-muted" style="margin-top:10px">We will get back to you during studio hours.</p>
+        <button class="btn btn--ghost btn--sm" data-close-modal style="margin-top:22px">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

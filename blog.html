@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Journal — Notes from the chair | VANTA Barber Studio</title>
+  <meta name="description" content="Guides, product breakdowns and craft notes from the VANTA barbers. How often to fade, which product to buy, why we still use a straight razor.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader">
+    <div>
+      <div class="preloader__logo"><span>V</span><span>A</span><span>N</span><span>T</span><span>A</span></div>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor-ring"><span>Read</span></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="VANTA home">
+        <svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#d41f3a"/><path d="M12 13l12 22 12-22" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="38" r="2.6" fill="#fff"/></svg>
+        <span>VANTA<small>Barber Studio</small></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html" class="nav__link">About</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="index.html#team" class="nav__link">Barbers</a>
+        <a href="index.html#booking" class="nav__link">Booking</a>
+        <a href="blog.html" class="nav__link is-active">Journal</a>
+        <a href="contacts.html" class="nav__link">Contacts</a>
+      </nav>
+      <div class="header__right">
+        <a href="tel:+17185550142" class="header__phone">+1 (718) 555-0142</a>
+        <a href="index.html#booking" class="btn btn--primary btn--sm" data-magnetic="0.25">Book a chair</a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav">
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="index.html#team" class="mobile-nav__link">Barbers</a>
+    <a href="index.html#booking" class="mobile-nav__link">Booking</a>
+    <a href="blog.html" class="mobile-nav__link">Journal</a>
+    <a href="contacts.html" class="mobile-nav__link">Contacts</a>
+    <a href="index.html#booking" class="btn btn--primary mobile-nav__cta">Book a chair</a>
+    <div class="mobile-nav__footer"><a href="tel:+17185550142">+1 (718) 555-0142</a><span>142 Bedford Ave, Brooklyn</span></div>
+  </div>
+
+  <main>
+    <!-- Page hero -->
+    <section class="page-hero hero" style="min-height:auto">
+      <div class="hero__glow"></div>
+      <div class="container">
+        <span class="overline reveal">Journal</span>
+        <h1 class="h-display hero__title">Notes from the chair</h1>
+        <p class="lead reveal" style="--d:.3s;margin-top:24px">Everything our barbers tell clients while cutting, written down. No sponsored posts, no “10 trends for summer”. Just what works.</p>
+      </div>
+    </section>
+
+    <section class="section section--tight">
+      <div class="container">
+        <!-- Filters -->
+        <div class="blog-filters reveal">
+          <button class="filter-btn is-active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="guide">Guides</button>
+          <button class="filter-btn" data-filter="products">Products</button>
+          <button class="filter-btn" data-filter="craft">Craft</button>
+          <button class="filter-btn" data-filter="studio">Studio</button>
+        </div>
+
+        <!-- Grid -->
+        <div class="blog-grid">
+          <a href="article.html" class="post" data-cat="guide" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/1805600/pexels-photo-1805600.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Guide</span></div>
+            <div class="post__body"><div class="post__meta"><span>Oct 18, 2026</span><span>6 min read</span><span>by Marcus Hale</span></div><h3 class="post__title">How often should you actually get a fade?</h3><p class="post__excerpt">The honest answer depends on hair density, how high the fade sits and how sharp you need to look on a Monday morning. Here's the math we use with clients — and why a 3-week cycle beats weekly line-ups for most people.</p></div>
+          </a>
+          <a href="article.html#studio-spacing" class="post" data-cat="studio" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/4969838/pexels-photo-4969838.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt=""><span class="post__tag">Studio</span></div>
+            <div class="post__body"><div class="post__meta"><span>Oct 9, 2026</span><span>3 min read</span></div><h3 class="post__title">Why the chairs are 1.8 m apart</h3><p class="post__excerpt">Most shops fit as many chairs as the fire code allows. We fit as few as the work allows. Here's the thinking.</p></div>
+          </a>
+          <a href="article.html#product-guide" class="post" data-cat="products" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/13058740/pexels-photo-13058740.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt=""><span class="post__tag">Products</span></div>
+            <div class="post__body"><div class="post__meta"><span>Sep 28, 2026</span><span>4 min read</span></div><h3 class="post__title">Clay, pomade, paste: what you're buying wrong</h3><p class="post__excerpt">Most men use the wrong product for their hair type. A quick field guide from our back bar — by hold, shine and how it washes out.</p></div>
+          </a>
+          <a href="article.html#straight-razor" class="post" data-cat="craft" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/1453005/pexels-photo-1453005.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Craft</span></div>
+            <div class="post__body"><div class="post__meta"><span>Sep 14, 2026</span><span>7 min read</span><span>by Leo Ferrante</span></div><h3 class="post__title">Why we still use a straight razor in 2026</h3><p class="post__excerpt">It's slower, harder to learn and impossible to fake. It's also the only thing that gives a line-up that lasts past the weekend.</p></div>
+          </a>
+          <a href="article.html#beard-plan" class="post" data-cat="guide" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/9992819/pexels-photo-9992819.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Guide</span></div>
+            <div class="post__body"><div class="post__meta"><span>Aug 30, 2026</span><span>5 min read</span></div><h3 class="post__title">Growing a beard: the 8-week survival plan</h3><p class="post__excerpt">Weeks 2 to 5 are where everyone gives up. Here's what to do (and not do) so you make it to the part where it looks intentional.</p></div>
+          </a>
+          <a href="article.html#cutting-curls" class="post" data-cat="craft" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/37533244/pexels-photo-37533244.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Craft</span></div>
+            <div class="post__body"><div class="post__meta"><span>Aug 12, 2026</span><span>6 min read</span><span>by Dante Cole</span></div><h3 class="post__title">Cutting curls: why most barbers get it wrong</h3><p class="post__excerpt">Curly hair shrinks, moves and lies to you when it's wet. The three rules we teach every new barber on the floor.</p></div>
+          </a>
+          <a href="article.html#home-trimmer" class="post" data-cat="products" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/7697217/pexels-photo-7697217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Products</span></div>
+            <div class="post__body"><div class="post__meta"><span>Dec 18, 2025</span><span>4 min read</span></div><h3 class="post__title">The trimmer we recommend for home upkeep</h3><p class="post__excerpt">You don't need a $300 tool to keep your neckline clean between visits. You need one specific $60 one and a mirror.</p></div>
+          </a>
+          <a href="article.html#playlist" class="post" data-cat="studio" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/18090356/pexels-photo-18090356.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt=""><span class="post__tag">Studio</span></div>
+            <div class="post__body"><div class="post__meta"><span>Dec 2, 2025</span><span>3 min read</span></div><h3 class="post__title">What's on the playlist (and why no podcasts)</h3><p class="post__excerpt">A barbershop sounds a certain way. Here's the thinking behind ours — plus the Spotify link clients keep asking for.</p></div>
+          </a>
+          <a href="article.html#thinning-hair" class="post" data-cat="guide" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/5970247/pexels-photo-5970247.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Guide</span></div>
+            <div class="post__body"><div class="post__meta"><span>Nov 14, 2025</span><span>5 min read</span></div><h3 class="post__title">Thinning on top? Three cuts that actually help</h3><p class="post__excerpt">No, not a comb-over. Texture, length and where you put the weight — the honest options for a receding hairline.</p></div>
+          </a>
+          <a href="article.html#vanta-exam" class="post" data-cat="craft" data-cursor="view">
+            <div class="post__img"><img src="https://images.pexels.com/photos/31840006/pexels-photo-31840006.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt=""><span class="post__tag">Craft</span></div>
+            <div class="post__body"><div class="post__meta"><span>Oct 30, 2025</span><span>8 min read</span></div><h3 class="post__title">Inside the VANTA exam: all 40 points</h3><p class="post__excerpt">The technical test every barber passes before they touch a client. We're publishing it because we think the industry should have one.</p></div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__about">
+          <a href="index.html" class="logo"><svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#d41f3a"/><path d="M12 13l12 22 12-22" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="38" r="2.6" fill="#fff"/></svg><span>VANTA<small>Barber Studio</small></span></a>
+          <p>A Brooklyn barber studio for men who notice the details. Est. 2016.</p>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://t.me" target="_blank" rel="noopener" class="social" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6L18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.2 13.1 2.7 11.7c-1-.3-1-1 .2-1.5L20.6 3.3c.8-.3 1.5.2 1.3 1.3z"/></svg></a>
+            <a href="https://wa.me/17185550142" target="_blank" rel="noopener" class="social" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Studio</h4><ul><li><a href="about.html">About us</a></li><li><a href="services.html">Services &amp; prices</a></li><li><a href="index.html#team">Barbers</a></li><li><a href="blog.html">Journal</a></li><li><a href="contacts.html">Contacts</a></li></ul></div>
+        <div class="footer__col"><h4>Services</h4><ul><li><a href="services.html">Signature Haircut</a></li><li><a href="services.html">Skin Fade</a></li><li><a href="services.html">Beard Sculpting</a></li><li><a href="services.html">Hot Towel Shave</a></li><li><a href="services.html">Gray Blending</a></li></ul></div>
+        <div class="footer__col"><h4>Visit</h4><ul><li><a href="contacts.html">142 Bedford Ave, Brooklyn, NY 11249</a></li><li><a href="tel:+17185550142">+1 (718) 555-0142</a></li><li><a href="mailto:hello@vanta.studio">hello@vanta.studio</a></li><li><span class="text-muted">Mon–Wed 10:00–20:00 · Thu–Fri 10:00–21:00 · Sat 09:00–20:00 · Sun closed</span></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2016–2026 VANTA Barber Studio. All rights reserved.</span><a href="#" class="creator-link" onclick="return false;">Created by Artem Punin</a></div>
+      <div class="footer__big" aria-hidden="true">VANTA</div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V4m0 0l-6 6m6-6l6 6"/></svg></button>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close-modal aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <span class="overline">VANTA · Brooklyn</span>
+      <h3 class="modal__title" id="modal-title">Request a call back</h3>
+      <p class="modal__sub">Portfolio demo: enter a sample number to preview the request flow. Nothing is transmitted.</p>
+      <div class="modal__context"></div>
+      <form class="form js-lead-form" novalidate>
+        <div class="form__row">
+          <div class="field"><input type="text" name="name" placeholder="Your name" autocomplete="name"></div>
+          <div class="field"><input type="tel" name="phone" placeholder="+1 718 000 0000" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><textarea name="message" rows="2" placeholder="Anything we should know? (optional)"></textarea></div>
+        <button type="submit" class="btn btn--primary">Call me back</button>
+        <p class="form__legal">Portfolio demo: the form simulates submission and does not send or store personal data.</p>
+      </form>
+      <div class="modal__or">or reach us directly</div>
+      <div class="modal__socials">
+        <a href="https://t.me" target="_blank" rel="noopener" class="modal__social modal__social--tg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6L18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.2 13.1 2.7 11.7c-1-.3-1-1 .2-1.5L20.6 3.3c.8-.3 1.5.2 1.3 1.3z"/></svg>Telegram</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="modal__social modal__social--ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+        <a href="https://wa.me/17185550142" target="_blank" rel="noopener" class="modal__social modal__social--wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+      </div>
+      <div class="modal__success">
+        <div class="modal__success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <h3 class="h-md">Demo request completed.</h3>
+        <p class="text-muted" style="margin-top:10px">No data was sent or stored. A production build would now notify the studio.</p>
+        <button class="btn btn--ghost btn--sm" data-close-modal style="margin-top:22px">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

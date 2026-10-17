@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About VANTA — Ten years of sharp work in Brooklyn | VANTA Barber Studio</title>
+  <meta name="description" content="The story of VANTA Barber Studio: from two chairs in a record shop to a 12-barber studio on Bedford Ave. Our values, our barbers, our standards.">
+  <link rel="icon" href="img/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&family=Unbounded:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="preloader">
+    <div>
+      <div class="preloader__logo"><span>V</span><span>A</span><span>N</span><span>T</span><span>A</span></div>
+      <div class="preloader__bar"><i></i></div>
+    </div>
+  </div>
+  <div class="cursor"></div>
+  <div class="cursor-ring"><span>View</span></div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="logo" aria-label="VANTA home">
+        <svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#d41f3a"/><path d="M12 13l12 22 12-22" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="38" r="2.6" fill="#fff"/></svg>
+        <span>VANTA<small>Barber Studio</small></span>
+      </a>
+      <nav class="nav" aria-label="Main navigation">
+        <a href="about.html" class="nav__link is-active">About</a>
+        <a href="services.html" class="nav__link">Services</a>
+        <a href="index.html#team" class="nav__link">Barbers</a>
+        <a href="index.html#booking" class="nav__link">Booking</a>
+        <a href="blog.html" class="nav__link">Journal</a>
+        <a href="contacts.html" class="nav__link">Contacts</a>
+      </nav>
+      <div class="header__right">
+        <a href="tel:+17185550142" class="header__phone">+1 (718) 555-0142</a>
+        <a href="index.html#booking" class="btn btn--primary btn--sm" data-magnetic="0.25">Book a chair</a>
+        <button class="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-nav">
+    <a href="about.html" class="mobile-nav__link">About</a>
+    <a href="services.html" class="mobile-nav__link">Services</a>
+    <a href="index.html#team" class="mobile-nav__link">Barbers</a>
+    <a href="index.html#booking" class="mobile-nav__link">Booking</a>
+    <a href="blog.html" class="mobile-nav__link">Journal</a>
+    <a href="contacts.html" class="mobile-nav__link">Contacts</a>
+    <a href="index.html#booking" class="btn btn--primary mobile-nav__cta">Book a chair</a>
+    <div class="mobile-nav__footer"><a href="tel:+17185550142">+1 (718) 555-0142</a><span>142 Bedford Ave, Brooklyn</span></div>
+  </div>
+
+  <main>
+    <!-- Page hero -->
+    <section class="page-hero hero">
+      <div class="hero__glow"></div>
+      <div class="container page-hero__grid">
+        <div>
+          <span class="overline reveal">The studio</span>
+          <h1 class="h-display hero__title" data-accent-from="2" data-break-after="2">Two chairs. One rule.</h1>
+          <p class="lead reveal" style="--d:.3s;margin-top:24px">In 2016 Marcus Hale borrowed $4,000, two barber chairs and the back room of a record shop on Bedford Ave. The rule he wrote on the mirror is still there: <b style="color:var(--text)">“Never rush a line-up.”</b></p>
+        </div>
+        <div class="page-hero__media reveal reveal--right" data-cursor="view">
+          <img src="https://images.pexels.com/photos/18090355/pexels-photo-18090355.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=627&w=1200" alt="Vintage barbershop interior" data-parallax="0.12">
+        </div>
+      </div>
+    </section>
+
+    <!-- Numbers -->
+    <section class="about-stats-section">
+      <div class="container">
+        <div class="hero__stats about-stats reveal-stagger">
+          <div class="stat"><div class="stat__num"><span data-count="10">0</span><i>+</i></div><div class="stat__label">Operating in Brooklyn since 2016</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="12">0</span></div><div class="stat__label">Barbers on the floor</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="48">0</span><b>k</b><i>+</i></div><div class="stat__label">Cuts since 2016</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="71">0</span><i>%</i></div><div class="stat__label">Clients on a repeat cycle</div></div>
+          <div class="stat"><div class="stat__num"><span data-count="3">0</span></div><div class="stat__label">Barber-of-the-Year awards</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Story with video -->
+    <section class="section section--surface">
+      <div class="container about">
+        <div class="about__text about__text--stretch">
+          <span class="overline reveal">Why we exist</span>
+          <h2 class="h-xl reveal" style="--d:.1s">Barbering got fast. <span class="accent">We didn't.</span></h2>
+          <p class="lead reveal" style="--d:.2s">Somewhere around 2014 the industry decided a haircut should take 20 minutes and cost whatever a sandwich costs. The results walked around Brooklyn on thousands of heads: uneven fades, line-ups that looked good for a day, beards trimmed like hedges.</p>
+          <p class="lead reveal" style="--d:.3s;margin-top:16px">VANTA is the opposite bet. Longer appointments, fewer clients per barber per day, a consultation before every cut and a straight razor on every edge. It costs more. It also lasts three times longer — our clients come back on a 3–4 week cycle, not weekly.</p>
+          <div class="about__cta reveal"><a href="index.html#booking" class="btn btn--primary" data-magnetic="0.3">Experience it <svg class="btn__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17L17 7M8 7h9v9"/></svg></a></div>
+        </div>
+        <div class="about__media reveal reveal--right">
+          <div class="media-card">
+            <span class="media-card__tag"><i></i>Hot towel shave</span>
+            <video data-autoplay muted loop playsinline preload="metadata" poster="https://images.pexels.com/videos/8867395/adult-bald-barber-barber-shop-8867395.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200">
+              <source src="https://videos.pexels.com/video-files/8867395/8867395-hd_1920_1080_24fps.mp4" type="video/mp4">
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Values -->
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Standards</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s"><span class="accent">Six rules</span> every barber follows</h2>
+          </div>
+        </div>
+        <div class="values-grid reveal-stagger">
+          <div class="value" data-tilt="5"><div class="value__n">01</div><h3>Time matched to the service</h3><p>A 10-minute add-on gets 10 minutes; a 90-minute combo gets 90. Nobody waits in the chair while the barber finishes someone else.</p></div>
+          <div class="value" data-tilt="5"><div class="value__n">02</div><h3>Consult, then cut</h3><p>Five minutes on growth patterns, cowlicks, how you style it at home and what your week looks like. The best haircut is the one that still works on day 20.</p></div>
+          <div class="value" data-tilt="5"><div class="value__n">03</div><h3>Razor on every edge</h3><p>Trimmers get you close. A straight razor gets you clean. Every line-up, neck and beard edge is finished by hand with a blade — it's slower and it's the only way.</p></div>
+          <div class="value" data-tilt="5"><div class="value__n">04</div><h3>Client notes, always</h3><p>Guard numbers, product used, what you liked, what you didn't. Written down after every visit so your barber — or any barber — can repeat it exactly.</p></div>
+          <div class="value" data-tilt="5"><div class="value__n">05</div><h3>Clean beyond code</h3><p>Barbicide between every client, fresh towels, single-use neck strips and blades. The chair you sit in has been wiped down less than ten minutes ago.</p></div>
+          <div class="value" data-tilt="5"><div class="value__n">06</div><h3>Free 7-day retouch</h3><p>If a line grows out odd or you want the edges tighter, come back within a week. No charge, no questions, no awkwardness.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Timeline -->
+    <section class="section section--surface">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">Timeline</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s"><span class="accent">Ten years,</span> nine milestones</h2>
+          </div>
+        </div>
+        <div class="timeline">
+          <div class="tl-item"><span class="tl-item__year">2016</span><div class="tl-item__body"><h3>Two chairs behind the records</h3><p>Marcus opens in the back room of an independent Williamsburg record shop. Word spreads by the second month; the waitlist hits three weeks by the sixth.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2017</span><div class="tl-item__body"><h3>Leo joins</h3><p>A straight-razor specialist from Naples via London. Hot Towel Shave goes on the menu and becomes the second most booked service.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2018</span><div class="tl-item__body"><h3>142 Bedford Ave</h3><p>We sign the lease on the current space — 1,800 sq ft, six chairs, original tin ceiling. Opening week is sold out before the paint dries.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2019</span><div class="tl-item__body"><h3>The VANTA exam</h3><p>We write our internal technical standard: 40 points covering fades, scissor work, razor, consultation and hygiene. Every barber passes it before touching a client.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2020</span><div class="tl-item__body"><h3>Surviving</h3><p>Closed for 14 weeks. We sell “pay it forward” cuts online, keep every barber on payroll and reopen with the online booking system you use today.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2022</span><div class="tl-item__body"><h3>Twelve chairs</h3><p>We take the unit next door. Dante builds the texture programme — curls, coils and gray blending become a third of bookings within a year.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2023</span><div class="tl-item__body"><h3>VANTA Matte Clay</h3><p>After two years of testing we release our own product. Medium hold, zero shine, washes out with water. Still the best seller on the back bar.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2024</span><div class="tl-item__body"><h3>Barber of the Year, NYC</h3><p>Marcus wins his third — the first barber in the city to do so. He mentions it exactly zero times in the studio.</p></div></div>
+          <div class="tl-item"><span class="tl-item__year">2026</span><div class="tl-item__body"><h3>48,000 cuts and counting</h3><p>Same rule on the mirror. Same razor on every edge. New faces on the floor — and, hopefully, yours in the chair.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section class="section" id="team">
+      <div class="container">
+        <div class="section-head">
+          <div class="section-head__text">
+            <span class="overline reveal">The barbers</span>
+            <h2 class="h-xl section-head__title reveal" style="--d:.1s">Choose your barber</h2>
+          </div>
+          <p class="lead section-head__aside section-head__aside--narrow reveal" style="--d:.2s">Three levels — Barber, Senior, Master. Same standards, different years behind the chair. Hover to meet them.</p>
+        </div>
+        <div class="team-grid reveal-stagger">
+          <div class="barber" data-tilt="8"><img src="img/barber-1.jpg" alt="Marcus Hale"><div class="barber__info"><span class="barber__level">Master</span><h3 class="barber__name">Marcus Hale</h3><p class="barber__spec">Founder · Skin fades &amp; classic scissor work</p><p class="barber__more">14 years behind the chair. Trained in London and Philadelphia. Three-time NYC Barber of the Year.</p></div></div>
+          <div class="barber" data-tilt="8"><img src="img/barber-2.jpg" alt="Leo Ferrante"><div class="barber__info"><span class="barber__level">Senior</span><h3 class="barber__name">Leo Ferrante</h3><p class="barber__spec">Beard architecture &amp; hot towel shaves</p><p class="barber__more">Straight razor specialist from Naples via London. Runs the longest beard consultations in the studio.</p></div></div>
+          <div class="barber" data-tilt="8"><img src="img/barber-3.jpg" alt="Dante Cole"><div class="barber__info"><span class="barber__level">Senior</span><h3 class="barber__name">Dante Cole</h3><p class="barber__spec">Textured crops, curls &amp; gray blending</p><p class="barber__more">Built the VANTA texture programme. Go-to for curly and coily hair, and the only person allowed to talk you into gray blending.</p></div></div>
+          <div class="barber" data-tilt="8"><img src="img/barber-4.jpg" alt="Ivan Petrov"><div class="barber__info"><span class="barber__level">Barber</span><h3 class="barber__name">Ivan Petrov</h3><p class="barber__spec">Modern fades &amp; kids cuts</p><p class="barber__more">Three years in, fastest-growing client list on the floor. Incredibly patient with kids, incredibly precise with a trimmer.</p></div></div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__col footer__about">
+          <a href="index.html" class="logo"><svg class="logo__mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect width="48" height="48" rx="14" fill="#d41f3a"/><path d="M12 13l12 22 12-22" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="24" cy="38" r="2.6" fill="#fff"/></svg><span>VANTA<small>Barber Studio</small></span></a>
+          <p>A Brooklyn barber studio for men who notice the details. Est. 2016.</p>
+          <div class="socials">
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+            <a href="https://t.me" target="_blank" rel="noopener" class="social" aria-label="Telegram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6L18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.2 13.1 2.7 11.7c-1-.3-1-1 .2-1.5L20.6 3.3c.8-.3 1.5.2 1.3 1.3z"/></svg></a>
+            <a href="https://wa.me/17185550142" target="_blank" rel="noopener" class="social" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg></a>
+          </div>
+        </div>
+        <div class="footer__col"><h4>Studio</h4><ul><li><a href="about.html">About us</a></li><li><a href="services.html">Services &amp; prices</a></li><li><a href="index.html#team">Barbers</a></li><li><a href="blog.html">Journal</a></li><li><a href="contacts.html">Contacts</a></li></ul></div>
+        <div class="footer__col"><h4>Services</h4><ul><li><a href="services.html">Signature Haircut</a></li><li><a href="services.html">Skin Fade</a></li><li><a href="services.html">Beard Sculpting</a></li><li><a href="services.html">Hot Towel Shave</a></li><li><a href="services.html">Gray Blending</a></li></ul></div>
+        <div class="footer__col"><h4>Visit</h4><ul><li><a href="contacts.html">142 Bedford Ave, Brooklyn, NY 11249</a></li><li><a href="tel:+17185550142">+1 (718) 555-0142</a></li><li><a href="mailto:hello@vanta.studio">hello@vanta.studio</a></li><li><span class="text-muted">Mon–Wed 10:00–20:00 · Thu–Fri 10:00–21:00 · Sat 09:00–20:00 · Sun closed</span></li></ul></div>
+      </div>
+      <div class="footer__bottom"><span>© 2016–2026 VANTA Barber Studio. All rights reserved.</span><a href="#" class="creator-link" onclick="return false;">Created by Artem Punin</a></div>
+      <div class="footer__big" aria-hidden="true">VANTA</div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20V4m0 0l-6 6m6-6l6 6"/></svg></button>
+
+  <!-- Modal -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <div class="modal__backdrop" data-close-modal></div>
+    <div class="modal__box">
+      <button class="modal__close" data-close-modal aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      <span class="overline">VANTA · Brooklyn</span>
+      <h3 class="modal__title" id="modal-title">Request a call back</h3>
+      <p class="modal__sub">Portfolio demo: enter a sample number to preview the request flow. Nothing is transmitted.</p>
+      <div class="modal__context"></div>
+      <form class="form js-lead-form" novalidate>
+        <div class="form__row">
+          <div class="field"><input type="text" name="name" placeholder="Your name" autocomplete="name"></div>
+          <div class="field"><input type="tel" name="phone" placeholder="+1 718 000 0000" autocomplete="tel" required></div>
+        </div>
+        <div class="field"><textarea name="message" rows="2" placeholder="Anything we should know? (optional)"></textarea></div>
+        <button type="submit" class="btn btn--primary">Call me back</button>
+        <p class="form__legal">Portfolio demo: the form simulates submission and does not send or store personal data.</p>
+      </form>
+      <div class="modal__or">or reach us directly</div>
+      <div class="modal__socials">
+        <a href="https://t.me" target="_blank" rel="noopener" class="modal__social modal__social--tg"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.6L18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-.9.5l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.2 13.1 2.7 11.7c-1-.3-1-1 .2-1.5L20.6 3.3c.8-.3 1.5.2 1.3 1.3z"/></svg>Telegram</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener" class="modal__social modal__social--ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>Instagram</a>
+        <a href="https://wa.me/17185550142" target="_blank" rel="noopener" class="modal__social modal__social--wa"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.6 15.1L2 22l5-1.3A10 10 0 1012 2zm0 18.2a8.2 8.2 0 01-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1112 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 01-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 00-.7.3 3 3 0 00-.9 2.2 5.2 5.2 0 001.1 2.8 12 12 0 004.6 4c1.7.7 2.4.8 3.2.7a2.7 2.7 0 001.8-1.3 2.2 2.2 0 00.2-1.3c-.1-.1-.3-.2-.5-.3z"/></svg>WhatsApp</a>
+      </div>
+      <div class="modal__success">
+        <div class="modal__success-icon"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13l4 4L19 7"/></svg></div>
+        <h3 class="h-md">Demo request completed.</h3>
+        <p class="text-muted" style="margin-top:10px">No data was sent or stored. A production build would now notify the studio.</p>
+        <button class="btn btn--ghost btn--sm" data-close-modal style="margin-top:22px">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
